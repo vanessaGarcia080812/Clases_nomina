@@ -8,16 +8,17 @@ class DaoEmpleadoImpl extends Conexion implements DaoEmpleado{
     public function registrar(Empleado $a){ 
         try{
         if ($this->getCnx()!=null) { 
-        $numeroIdentificacionE=$a->getnumeroidentificacione();
-        $nombre1=$a->getnombre1();
-        $apellido1=$a->getapellido1();
-        $estado_civilE=$a->estado_civilE();  
-        $tipodocE=$a->tipodocE();
-        $correoE=$a->correoE();
-        $generoE=$a->generoE();
-        $celularE=$a->celularE();
-        $fecha_nacimiento=$a->fecha_nacimiento();
-        $nit='121321231';
+        $numeroIdentificacionE=$a->getNumeroIdentificacionE();
+        $nombre1=$a->getNombre1();
+        $apellido1=$a->getApellido1();
+        $estado_civilE=$a->getEstadoCivilE();  
+        $tipodocE=$a->getTipodocE();
+        $correoE=$a->getCorreoE();
+        $generoE=$a->getGeneroE();
+        $celularE=$a->getCelularE();
+        $fecha_nacimiento=$a->getFechaNacimiento();
+        $fechaExpdocu=$a->getFechaExpDocu();
+        $nit=$a->getNit();
 
         $sql="Insert into empleado values(?,?,?,?,?,?,?,?,?,?,?)";
         $stmt=$this->getCnx()->prepare($sql);

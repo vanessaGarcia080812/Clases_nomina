@@ -10,9 +10,9 @@ class Empleado {
     private $celularE;
     private $fecha_nacimiento;
     private $fechaexpdocu;
-    private $nit = '121321231';
+    private $nit;
 
-    public function __construct($numeroIdentificacionE, $nombre1, $apellido1, $estado_civilE, $tipodocE, $correoE, $generoE, $celularE, $fecha_nacimiento, $fechaexpdocu)
+    public function __construct($numeroIdentificacionE, $nombre1, $apellido1, $estado_civilE, $tipodocE, $correoE, $generoE, $celularE, $fecha_nacimiento, $fechaexpdocu,$nit)
     {
         $this->numeroIdentificacionE = $numeroIdentificacionE;
         $this->nombre1 = $nombre1;
@@ -24,6 +24,7 @@ class Empleado {
         $this->celularE = $celularE;
         $this->fecha_nacimiento = $fecha_nacimiento;
         $this->fechaexpdocu = $fechaexpdocu;
+        $this->nit = $nit;
     }
 
     public function getNumeroIdentificacionE()
@@ -125,7 +126,10 @@ class Empleado {
     {
         $this->fechaexpdocu = $fechaexpdocu;
     }
-
+    public function setNit($nit)
+    {
+        $this->nit = $nit;
+    }
     public function getNit()
     {
         return $this->nit;

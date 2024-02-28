@@ -25,8 +25,7 @@
       $fecha_nacimiento=$_GET['fecha_nacimiento'];
       $fechaexpdocu=$_GET['fechaexpdocu']; 
       $nit='121321231';
-      $a=new Empleado($numeroIdentificacionE,$nombre1,$apellido1,$estado_civilE,$tipodocE,$correoE, $generoE, $celularE, 
-      $fecha_nacimiento, $tipfechaexpdocuodocE, $nit);
+      $a=new Empleado($numeroIdentificacionE,$nombre1,$apellido1,$estado_civilE,$tipodocE,$correoE, $generoE, $celularE, $fecha_nacimiento, $fechaexpdocu, $nit);
       $dao->registrar($a);
       echo "REGISTRO INSERTADO CON EXITO";
     }

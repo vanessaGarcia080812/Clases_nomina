@@ -41,7 +41,7 @@
                 <label for="fechaexpdocu">Fecha de Expedición del Documento</label>    
                 <input type="text" name="fechaexpdocu" id="fechaexpdocu" class="form-control">
                 
-                <input type="submit" name="boton "value="Insertar Registro" class="btn btn-primary">
+                <input type="submit" name="boton"value="Insertar Registro" class="">
             </form>
         </div>
     </section>         
